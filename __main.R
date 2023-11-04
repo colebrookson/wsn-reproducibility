@@ -5,7 +5,7 @@
 #' If you're feeling verbose, you can add a description here of what the whole
 #' analysis does
 
-#' Set up ======================================================================
+# set up =======================================================================
 
 # packages
 library(here)
@@ -13,6 +13,14 @@ library(readr)
 #library(googledrive)
 library(magrittr)
 
-# files
+# data download and wrangling ==================================================
+
+#' DATA WRANGLING
+#' In this file, two datasets are downloaded, one from NOAA, one from Google
+#' Drive, and both are cleaned in this script and clean versions are written
+#' out to `./data/clean/`
 source(here::here("./R/00_data_wrangling.R"))
+
+# modeling =====================================================================
+
 

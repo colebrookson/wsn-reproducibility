@@ -37,12 +37,19 @@ For the code we need in this file, refer to the file directly here in the repo. 
 
 1. Define the URL and download the file
 2. Read in the file 
-3. Remove the columns we don't need & filter the values 
-4. 
+3. Remove the columns we don't need & filter the values for the NOAA file
+4. Remove any NA's from the species richness file
+5. Write both out to a `/data/clean/` location
+
+## Modeling the Data
+
+Because we're limited on time, we'll be doing one simple model on only one of the datasets, not on both. 
 
 
 INSTRUCTOR NOTES:
 
 1. Note you could just pull the data directly into a dataframe with read_csv() but we aren't doing that here for demonstration purposes and because it gives you a copy in case you want to work offline which for field folks is often 
 2. Note we're not doing any cleaning on the species data
+3. Talk through piping while filtering the noaa data
+4. 
 

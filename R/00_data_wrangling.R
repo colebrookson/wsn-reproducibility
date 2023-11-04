@@ -35,13 +35,13 @@ noaa_df <- noaa_df %>%
     )
 
 ## species richness data =======================================================
-spp_df <- readr::read_csv(here::here("./data/raw/richness-data.csv"))
+rich_df <- readr::read_csv(here::here("./data/raw/richness-data.csv"))
 
 # look to see if there's any NA's in the data 
-if(any(complete.cases(spp_df) == FALSE)) {
-  spp_df <- na.omit(spp_df)
+if(any(complete.cases(rich_df) == FALSE)) {
+  rich_df <- na.omit(rich_df)
 }
 
 # write out resulting files ====================================================
 readr::write_csv(noaa_df, here::here("./data/clean/noaa-data.csv"))
-readr::write_csv(spp_df, here::here("./data/clean/richness-data.csv"))
+readr::write_csv(rich_df, here::here("./data/clean/richness-data.csv"))
