@@ -20,7 +20,7 @@ We're also going to be making a file in the root of our directory calle `__main.
 
 ## Using Data From the Web
 
-In this workshop, we're going to be using two sources of data, one that will be pulled from a NOAA repository and the other that will be pulled from a Google Drive location. To do this, we'll need to write some code in some R files. Start my making a new file in the `/R` folder called `00_data_wrangling.R`. 
+In this workshop, we're going to be using data that will be pulled from a Google Drive location. To do this, we'll need to write some code in some R files. Start my making a new file in the `/R` folder called `00_data_wrangling.R`. 
 
 In this file will be where we read in the data from the web, and clean it. 
 
@@ -37,9 +37,8 @@ For the code we need in this file, refer to the file directly here in the repo. 
 
 1. Define the URL and download the file
 2. Read in the file 
-3. Remove the columns we don't need & filter the values for the NOAA file
-4. Remove any NA's from the species richness file
-5. Write both out to a `/data/clean/` location
+3. Remove any NA's from the species richness file
+4. Write both out to a `/data/clean/` location
 
 ## Modeling the Data
 
@@ -49,7 +48,6 @@ Because we're limited on time, we'll be doing one simple model on only one of th
 INSTRUCTOR NOTES:
 
 1. Note you could just pull the data directly into a dataframe with read_csv() but we aren't doing that here for demonstration purposes and because it gives you a copy in case you want to work offline which for field folks is often 
-2. Note we're not doing any cleaning on the species data
 3. Talk through piping while filtering the noaa data
 4. 
 
