@@ -22,6 +22,10 @@ library(dplyr)
 #' out to `./data/clean/`
 source(here::here("./R/00_data_wrangling.R"))
 
+#' first, use the rm(list = ls()) command with CAUTION, as it removes the
+#' environment variables. gc() stands for garbage collector and will attempt
+#' to free up any memory that's not being used
+rm(list = ls()); gc()
 # modeling =====================================================================
 
 

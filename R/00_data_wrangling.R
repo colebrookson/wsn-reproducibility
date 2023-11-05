@@ -16,8 +16,8 @@ download.file(url_spp, here::here("./data/raw/richness-data.csv"), mode="wb")
 rich_df <- readr::read_csv(here::here("./data/raw/richness-data.csv"))
 
 # look to see if there's any NA's in the data 
-if(any(complete.cases(rich_df) == FALSE)) {
-  rich_df <- na.omit(rich_df)
+if(any(stats::complete.cases(rich_df) == FALSE)) {
+  rich_df <- stats::na.omit(rich_df)
 }
 
 # rename the column names

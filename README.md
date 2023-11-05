@@ -38,16 +38,25 @@ For the code we need in this file, refer to the file directly here in the repo. 
 1. Define the URL and download the file
 2. Read in the file 
 3. Remove any NA's from the species richness file
+4. Rename the columns
 4. Write both out to a `/data/clean/` location
 
 ## Modeling the Data
 
-Because we're limited on time, we'll be doing one simple model on only one of the datasets, not on both. 
+Because we're limited on time, we'll be doing only part of the modeling process. We'll only be comparing two models and not going through all of the diagnostic checking. That is left as an exercise for those interested.  
 
 
-INSTRUCTOR NOTES:
+## INSTRUCTOR NOTES:
+
+### Data cleaning 
 
 1. Note you could just pull the data directly into a dataframe with read_csv() but we aren't doing that here for demonstration purposes and because it gives you a copy in case you want to work offline which for field folks is often 
 3. Talk through piping while filtering the noaa data
-4. 
+
+### Modeling
+
+1. Look at the column types then build out the ifelse 
+2. Talk through the relationship between species richness and biomass very briefly 
+3. Link functions are discussed in the tutorial for those who need a refresher
+4. For the AIC, do AIC(mod1, mod2), then break it into two for the ifelse 
 
