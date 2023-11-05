@@ -4,13 +4,14 @@ The content in this repository is for the workshop on reproducibility in R, give
 
 ## Setting Up Our Working Directory
 
-Start by selecting somewhere on your computer for this directory to live. It usually make sense to keep all your folders for different projects in the same place. So we're all on the same page, we suggest naming it `wsn-reproducibility`. Now, we'll be making some folders to keep our files in. We'll make three folders to start: 
+Start by selecting somewhere on your computer for this directory to live. It usually make sense to keep all your folders for different projects in the same place. So we're all on the same page, we suggest naming it `wsn-reproducibility`. Now, we'll be making some folders to keep our files in. We'll make three four to start: 
 
 * `/data`
   * `/raw`
   * `/clean`
 * `/R`
 * `/outputs`
+* `/figs`
 
 These three are the basis of most analysis projects. Next, we'll make an RProject. To do this, open RStudio, then click *File > New Project > Existing Directory*, then use the *Browse...* button to navigate in your folder structure and select the `wsn-reproducibility` folder. 
 
@@ -59,4 +60,10 @@ Because we're limited on time, we'll be doing only part of the modeling process.
 2. Talk through the relationship between species richness and biomass very briefly 
 3. Link functions are discussed in the tutorial for those who need a refresher
 4. For the AIC, do AIC(mod1, mod2), then break it into two for the ifelse 
+5. save the best model that we've named separately
+
+### Plotting
+
+1. Go through it step by step
+2. Remember each function needs a forcing 
 

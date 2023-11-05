@@ -26,6 +26,23 @@ source(here::here("./R/00_data_wrangling.R"))
 #' environment variables. gc() stands for garbage collector and will attempt
 #' to free up any memory that's not being used
 rm(list = ls()); gc()
+
 # modeling =====================================================================
 
+#' MODEL FITTING
+#' We compare two models, a simpler model and a more complex option, using AIC.
+#' The best model is selected, and the model object is written out to 
+#' `./outputs/`
+source(here::here("./R/01_model_fitting.R"))
+
+rm(list = ls()); gc()
+
+# plotting =====================================================================
+
+#' PLOTTING 
+#' We generate the model predictions on the data from our best model, and plot
+#' the raw data along with our model predictions. The final figure is written
+#' out to: 
+#' `./figs/`
+source(here::here("./R/02_plotting.R"))
 
