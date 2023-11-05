@@ -27,5 +27,5 @@ if(AIC(mod2) < (AIC(mod1) - 2)) {
   stop("Models need manual evaluation")
 }
 
-
-
+# save our best model 
+saveRDS(mod2, here::here("./outputs/best-model.rds"))
