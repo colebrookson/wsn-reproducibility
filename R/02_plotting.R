@@ -4,7 +4,8 @@
 
 # read in model object and dataframe ===========================================
 
-rich_df <- readr::read_csv(here::here("./data/clean/richness-data.csv"))
+rich_df <- readr::read_csv(here::here("./data/clean/richness-data.csv"),
+                           show_col_types = FALSE)
 
 # make results plot ============================================================
 
@@ -21,3 +22,4 @@ ggplot2::ggsave(
   plot,
   height = 6, width = 8
 )
+print("plot generated")

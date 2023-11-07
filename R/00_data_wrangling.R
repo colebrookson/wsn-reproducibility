@@ -13,7 +13,8 @@ url_spp <- paste0("https://drive.google.com/uc?export=download&id=",
 download.file(url_spp, here::here("./data/raw/richness-data.csv"), mode="wb")
 
 # read in data and clean it ====================================================
-rich_df <- readr::read_csv(here::here("./data/raw/richness-data.csv"))
+rich_df <- readr::read_csv(here::here("./data/raw/richness-data.csv"), 
+                           show_col_types = FALSE)
 
 # look to see if there's any NA's in the data 
 if(any(stats::complete.cases(rich_df) == FALSE)) {
