@@ -28,4 +28,4 @@ if(AIC(mod2) < (AIC(mod1) - 2)) {
 }
 
 # save our best model 
-saveRDS(mod2, here::here("./outputs/best-model.rds"))
+saveRDS(mod, here::here("./outputs/best-model.rds"))
