@@ -22,9 +22,8 @@ if(any(stats::complete.cases(rich_df) == FALSE)) {
 }
 
 # rename the column names
-rich_df <- rich_df %>% 
-  dplyr::rename(n_spp = Species) %>% 
-  dplyr::rename_with(tolower)
+rich_df <- dplyr::rename(rich_df, n_spp = Species)
+rich_df <- dplyr::rename_with(rich_df, tolower)
 
 # write out resulting files ====================================================
 readr::write_csv(rich_df, here::here("./data/clean/richness-data.csv"))
