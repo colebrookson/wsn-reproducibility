@@ -19,6 +19,7 @@ rich_df <- readr::read_csv(here::here("./data/raw/richness-data.csv"),
 # look to see if there's any NA's in the data 
 if(any(stats::complete.cases(rich_df) == FALSE)) {
   rich_df <- stats::na.omit(rich_df)
+  print("NA's present and omitted")
 }
 
 # rename the column names
