@@ -13,6 +13,7 @@ library(readr)
 #library(googledrive)
 library(magrittr)
 library(dplyr)
+library(broom)
 
 # data download and wrangling ==================================================
 
