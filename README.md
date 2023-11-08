@@ -4,7 +4,7 @@ The content in this repository is for the workshop on reproducibility in R, give
 
 ## Setting Up Our Working Directory
 
-Start by selecting somewhere on your computer for this directory to live. It usually make sense to keep all your folders for different projects in the same place. So we're all on the same page, we suggest naming it `wsn-reproducibility`. Now, we'll be making some folders to keep our files in. We'll make three four to start: 
+Start by selecting somewhere on your computer for this directory to live. It usually make sense to keep all your folders for different projects in the same place. So we're all on the same page, we suggest naming it `wsn-reproducibility`. Now, we'll be making some folders to keep our files in. We'll make four folders to start: 
 
 * `/data`
   * `/raw`
@@ -44,7 +44,17 @@ For the code we need in this file, refer to the file directly here in the repo. 
 
 ## Modeling the Data
 
-Because we're limited on time, we'll be doing only part of the modeling process. We'll only be comparing two models and not going through all of the diagnostic checking. That is left as an exercise for those interested.  
+Because we're limited on time, we'll be doing only part of the modeling process. We'll only be comparing two models and not going through all of the diagnostic checking. That is left as an exercise for those interested. What we'll do is: 
+
+1. Read in our cleaned data
+2. Check the data structures
+3. Fit two competing models
+4. Use AIC as our metric to compare the models
+5. Write out the best model
+
+## Plotting
+
+We now have our final model, great! However, we need to come up with a way to display our results. A commmon way of doing this is to plot the 
 
 
 ## INSTRUCTOR NOTES:
@@ -52,7 +62,6 @@ Because we're limited on time, we'll be doing only part of the modeling process.
 ### Data cleaning 
 
 1. Note you could just pull the data directly into a dataframe with read_csv() but we aren't doing that here for demonstration purposes and because it gives you a copy in case you want to work offline which for field folks is often 
-3. Talk through piping while filtering the noaa data
 
 ### Modeling
 
