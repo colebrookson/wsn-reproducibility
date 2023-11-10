@@ -8,8 +8,6 @@ rich_df <- readr::read_csv(here::here("./data/clean/richness-data.csv"),
 
 # model fitting ================================================================
 
-# make character variable a factor
-rich_df$ph <- as.factor(rich_df$ph)
 
 # compare between just biomass and biomass interacting with pH
 mod1 <- stats::glm(n_spp ~ biomass, data = rich_df,
